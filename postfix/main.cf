@@ -50,3 +50,5 @@ inet_protocols = all
 ### EDITED PARAMETERS ###
 ## Mailbox of 5000000 MB Capacity
 mailbox_size_limit = 5000000
+# Postfix doesnt like the messages being bigger than mailbox
+message_size_limit = 5000000
