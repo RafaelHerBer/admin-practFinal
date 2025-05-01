@@ -41,9 +41,12 @@ alias_database = hash:/etc/aliases
 mydestination = $myhostname, rafaserver, localhost.localdomain, localhost
 relayhost = 
 mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
-mailbox_size_limit = 0
 recipient_delimiter = +
 inet_interfaces = loopback-only
 default_transport = error
 relay_transport = error
 inet_protocols = all
+
+### EDITED PARAMETERS ###
+## Mailbox of 5000000 MB Capacity
+mailbox_size_limit = 5000000
